@@ -4,6 +4,7 @@ import './App.css';
 import A from './components/Greet'
 import W from './components/Welcome'
 import M from './components/Message'
+import C from './components/Counter'
 
 // function App() {
 //   return (
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <M name="Prince"></M>
+        <C></C>
         {/* <h1>Hello World</h1>
         <A heroName="Superman" name="Clark">
           <p>This is children props</p></A>

@@ -8,12 +8,19 @@ class Message extends Component {
             message:"Welcome Visitor"
         }
     }
+
+    changeMessage(){
+        this.setState({
+            message:"TY for subscribing"
+        })
+    }
     
 
     render() {
         return (
             <div>
-                <h1>{this.state.message} {this.props.name}</h1>               
+                <h1>{this.state.message}</h1> 
+                <button onClick={()=>this.changeMessage()}>Subscribe</button>              
             </div>
         )
     }
