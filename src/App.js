@@ -5,7 +5,7 @@ import A from './components/Greet'
 import W from './components/Welcome'
 import M from './components/Message'
 import C from './components/Counter'
-
+import EB from './components/EventBind'
 // function App() {
 //   return (
 //     <div className="App">
@@ -20,8 +20,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <M name="Prince"></M>
-        <C></C>
+        {/* <M name="Prince"></M>
+        <C></C> */}
+        <EB></EB>
         {/* <h1>Hello World</h1>
         <A heroName="Superman" name="Clark">
           <p>This is children props</p></A>
