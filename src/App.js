@@ -20,7 +20,9 @@ class App extends Component {
         <A heroName="Superman" name="Clark">
           <p>This is children props</p></A>
         <A heroName="Batman" name="Bruce"></A>
-        <A heroName="Spiderman" name="Peter"></A>
+        <A heroName="Spiderman" name="Peter">
+          <button>Action</button>
+        </A>
         <A heroName="He-Man" name="Prince"></A>
       </div>
     );
