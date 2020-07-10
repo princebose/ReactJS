@@ -1,20 +1,19 @@
 import React, { Component } from 'react'
 
 class EventBind extends Component {
-    constructor() {
-        super()
 
+    constructor(props) {
+        super(props)
+    
         this.state = {
-            message: "Hello"
+             message:'Hello'
         }
         this.clickHandler = this.clickHandler.bind(this)
     }
-
-
-    //No this inside event handler
+    //no this inside an eventHadler
     clickHandler(){
         this.setState({
-            message:"Bye"
+            message:"GoodBye"
         })
         console.log(this)
     }
@@ -22,14 +21,10 @@ class EventBind extends Component {
     render() {
         return (
             <div>
-                <div>
-                    {this.state.message}
-                </div>
-                <div>
-                    {/* <button onClick={()=>this.clickHandler()}>Click</button> */}
-                    <button onClick={this.clickHandler}>Click</button>
-                </div>
-
+            <div>{this.state.message}</div>
+                {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
+                {/* <button onClick={()=>this.clickHandler()}>Click</button> */}
+                <button onClick={this.clickHandler}>Click</button>
             </div>
         )
     }

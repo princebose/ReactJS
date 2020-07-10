@@ -1,42 +1,49 @@
-import React, { Component } from 'react';
-//import logo from './logo.svg';
+import React from 'react';
+import { Component } from 'react'
 import './App.css';
 import A from './components/Greet'
-import W from './components/Welcome'
-import M from './components/Message'
-import C from './components/Counter'
-import EB from './components/EventBind'
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         Hello World
-//       </header>
-//     </div>
-//   );
-// }
+import Welcome from './components/Welcome'
+import Message from './components/Message'
+import Counter from './components/Counter'
+import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
 
-class App extends Component {
-  render() {
+
+
+class App extends Component{
+  render(){
     return (
-      <div className="App">
-        {/* <M name="Prince"></M>
-        <C></C> */}
-        <EB></EB>
-        {/* <h1>Hello World</h1>
-        <A heroName="Superman" name="Clark">
-          <p>This is children props</p></A>
-        <A heroName="Batman" name="Bruce"></A>
-        <A heroName="Spiderman" name="Peter">
-          <button>Action</button>
-        </A>
-        <A heroName="He-Man" name="Prince"></A>
-        <W heroName="He-Man" name="Prince"></W>
-        <W heroName="He-Man" name="Prince"></W>
-        <W heroName="He-Man" name="Prince"></W> */}
-        
-      </div>
-    );
+          <div className="App">
+
+          <UserGreeting></UserGreeting>
+
+          <ParentComponent></ParentComponent>
+
+          <EventBind></EventBind>
+
+
+          <Message></Message>
+          <Counter></Counter>
+
+           {/* <h3>Hello World from CLASS</h3>
+           <A name="Clark" heroName="Superman">
+             <p>This is the children props</p>
+           </A>
+           <A name="Bruce" heroName="Batman">
+             <button>Action</button>
+           </A>
+           <A name="Diana" heroName="Wonder Women">
+
+           </A>
+
+          <Welcome name="Clark" heroName="Superman">
+            <p>This is the children props</p>
+          </Welcome>
+          <Welcome name="Bruce" heroName="Batman"></Welcome>
+          <Welcome name="Diana" heroName="Wonder Women"></Welcome> */}
+          </div>
+        );
   }
 }
 export default App;

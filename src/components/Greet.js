@@ -1,22 +1,18 @@
 import React from 'react'
 
-function Greet(props) {
-    //return React.createElement('div',null,React.createElement('h1',null,'Greet Compnent'))
+function Greet(props){
+    console.log(props)
     return (
-        <div className="App">
-            <h1 > Hello {props.name} a.k.a {props.heroName} from Greet</h1>
-            <h3 >{props.children}</h3>
+        <div>
+            <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+            <h1>{props.children}</h1>
         </div>
     )
-} //JSX - Javascript and HTML combined, JS compiles HTML as well
+      
+    // return React.createElement('div',null,React.createElement('h1',null,'Greet Component'))
+}
 
-// const Greet = ()=>{
-//     return(
-//         <div className="App">
-//         <h1>Hello from Greet Component using arrow fn.</h1>
-//         </div>
-//     )
+// const Greet = () => <h1>Greet Component</h1>
 
-// }
 
-export default Greet;
+export default Greet
