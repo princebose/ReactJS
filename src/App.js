@@ -8,15 +8,15 @@ import Counter from './components/Counter'
 import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
-
-
+import FragmentDemo from './components/FragmentDemo'
+import Parent from './components/ParentComp'
 
 class App extends Component{
   render(){
     return (
           <div className="App">
-
-          <UserGreeting></UserGreeting>
+          <Parent></Parent>
+          {/* <UserGreeting></UserGreeting>
 
           <ParentComponent></ParentComponent>
 
@@ -24,7 +24,7 @@ class App extends Component{
 
 
           <Message></Message>
-          <Counter></Counter>
+          <Counter></Counter> */}
 
            {/* <h3>Hello World from CLASS</h3>
            <A name="Clark" heroName="Superman">
