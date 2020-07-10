@@ -10,12 +10,16 @@ import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import FragmentDemo from './components/FragmentDemo'
 import Parent from './components/ParentComp'
+import ClickCount from './components/ClickCounter'
+import HoverComp from './components/HoverCounter'
 
 class App extends Component{
   render(){
     return (
           <div className="App">
-          <Parent></Parent>
+          <HoverComp></HoverComp>
+          <ClickCount></ClickCount>
+          {/* <Parent></Parent> */}
           {/* <UserGreeting></UserGreeting>
 
           <ParentComponent></ParentComponent>
